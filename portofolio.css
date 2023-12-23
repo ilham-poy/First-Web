@@ -1,0 +1,715 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 10px;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  height: auto;
+}
+main {
+  height: 100%;
+  margin: 0;
+}
+/* Awal NAV */
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+nav {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0.2px 3px white;
+  position: fixed;
+  z-index: 5;
+}
+nav h2 {
+  font-size: 1.8rem;
+  color: aqua;
+}
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 20px;
+  /* background-color: red; */
+}
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+.toggle {
+  display: flex;
+  flex-direction: column;
+  /* display: none; */
+  position: absolute;
+  top: 100%;
+  height: 25vh;
+  width: 15rem;
+  background-color: rgb(26, 26, 26);
+  /* right: -100%; */
+  right: -100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+nav ul li {
+  font-size: 2rem;
+  font-weight: 500;
+  list-style: none;
+  margin: auto 0;
+  border-radius: 3px;
+  padding: 3px;
+  /* text-align: center; */
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  /* background-color: rgb(40 40 40); */
+}
+.aktif {
+  right: 0;
+  transition: 500ms;
+}
+nav ul li a {
+  color: rgb(255, 255, 255);
+}
+nav ul li span a {
+  color: rgb(255, 230, 0);
+}
+
+/* Akhir NAV */
+/* ??????????????????????????????? */
+/* Awal Home */
+#home {
+  width: 90%;
+  height: calc(100vh - 50px);
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+}
+.boxHome {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  color: aqua;
+  margin: 3px 0;
+}
+.intro p {
+  font-size: 3rem;
+  margin-left: 10px;
+  color: rgb(246, 243, 219);
+}
+.hero {
+  top: 0;
+  margin-bottom: 70px;
+  /* margin-top: 10px; */
+  -webkit-mask-image: url(img/splash.png);
+  -webkit-mask-position: right bottom;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-image: url(img/splash.png);
+  mask-position: right bottom;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+}
+.heroImg {
+  width: 290px;
+  height: 290px;
+}
+#home form {
+  text-align: center;
+  margin: 55px 0;
+}
+input#whatsapp {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+/* Akhir Home */
+/* ??????????????????????????? */
+/* Awal About */
+#about {
+  width: 90%;
+  /* height: calc(100vh - 50px); */
+  /* height: 100vh; */
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  top: 50px;
+}
+.aboutme {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.aboutme h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: aqua;
+  margin: 5px;
+}
+.text {
+  width: 100%;
+  max-width: 350px;
+  height: 25%;
+  max-height: 150px;
+  border: 0.5px solid aqua;
+  /* padding: 10px; */
+  border-radius: 3px;
+  box-shadow: 0.5px 0.5px 1.5px 1.5px aqua;
+  margin: 5px auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text p {
+  margin: 20px;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+.skill {
+  text-align: center;
+  margin: 7px auto 7px auto;
+}
+.skill-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.beginner,
+.intermediate {
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+.skill-me li {
+  margin: auto 10px;
+  font-size: 1.5rem;
+}
+.skill-me h3 {
+  font-size: 1.7rem;
+}
+.certif {
+  margin: 10px 20px;
+  max-width: 300px;
+  max-height: 180px;
+}
+.certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Akhir About */
+/* ?????????????????????????? */
+/* Awal Project */
+#project {
+  width: 90%;
+  /* height: calc(100vh - 50px); */
+  margin: 10px auto;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  top: 50px;
+}
+.myproject {
+  width: 100%;
+  height: 100%;
+}
+.myproject h2 {
+  font-size: 1.8rem;
+  color: aqua;
+  text-align: center;
+}
+.mywork {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.card {
+  max-width: 350px;
+  max-height: 250px;
+  border: 1px solid white;
+  margin: 10px 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.display {
+  width: 100%;
+  height: 80%;
+}
+.textcard {
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+.finalwork {
+  width: 100%;
+  height: 100%;
+}
+.card .textcard {
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.textcard h3 {
+  font-size: 1.4rem;
+}
+/* Akhir Project */
+/* ?????????????? */
+/* Awal Contact */
+#contact {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+}
+.contactme {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: rgb(30, 30, 30);
+  margin: 0 auto;
+}
+.sidecontact {
+  width: 100%;
+  margin: 10px auto;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contactme form {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.mycon {
+  background-color: rgba(48, 48, 48, 0.5);
+  /* margin: 0 auto; */
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.mycon p {
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin: 10px auto;
+  width: 80%;
+}
+.mycon p a {
+  color: rgb(255, 255, 255);
+}
+
+.conme p {
+  display: flex;
+  font-size: 1.4em;
+  align-items: center;
+  margin: 0;
+}
+.conme p span {
+  margin: 0 10px 0 5px;
+}
+.conme div {
+  margin: 10px auto;
+  background-color: rgb(40 40 40);
+  width: 150px;
+  border-radius: 10px;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+#contact h2 {
+  color: aqua;
+  text-align: center;
+  margin: 10px;
+  font-size: 1.8rem;
+}
+.formbox {
+  max-width: 300px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 1px;
+  padding: 10px;
+  background-color: rgba(61, 61, 61, 0.5);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.formbox label {
+  color: aqua;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+.formbox input {
+  width: 90%;
+  margin: 5px 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 1px solid white;
+  font-size: 1rem;
+  color: aliceblue;
+}
+textarea {
+  width: 90%;
+  margin: 2px 10px;
+  height: 100px;
+  /* resize: vertical;
+  max-height: 200px; */
+  background-color: rgba(61, 61, 61, 0.5);
+  border: 1px solid rgb(255, 255, 255);
+}
+legend {
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
+  /* position: absolute; */
+  background-color: aqua;
+  border-radius: 3px;
+  padding: 2px 10px;
+  font-weight: 1000;
+  text-align: center;
+  width: 60%;
+  align-items: center;
+  margin: 10px auto;
+}
+::placeholder {
+  color: rgb(184, 184, 184);
+}
+input#contactme {
+  border: none;
+  font-weight: 600;
+  border-radius: 3px;
+  width: 70px;
+  height: 20px;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  background-color: aqua;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.testing {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: 10;
+}
+/* Akhir Contact */
+/* Awal Footer */
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: aqua;
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div p {
+  text-decoration: wavy;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+/* Akhir Footer */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media only screen and (min-width: 600px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav ul li {
+    flex-direction: row;
+    font-size: 1.5rem;
+    background-color: transparent;
+  }
+
+  nav h2 {
+    font-size: 2rem;
+    margin-left: 30px;
+  }
+  nav .toggle {
+    display: flex;
+    flex-direction: row;
+    position: unset;
+    top: unset;
+    justify-content: space-around;
+    height: unset;
+    width: unset;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin: 0 10px;
+  }
+  nav .toggle li {
+    margin: 0 10px;
+  }
+  nav .menu-toggle {
+    display: none;
+  }
+  /* ???????????????????????? */
+  /* Awal Home */
+
+  /* .boxHome {
+    position: relative;
+    top: -100px;
+  } */
+  /* .hero {
+    max-width: 400px;
+    max-height: 400px;
+  } */
+  .heroImg {
+    width: 400px;
+    height: 400px;
+  }
+  #home form {
+    text-align: start;
+    margin: 20px 10px;
+    overflow: hidden;
+  }
+
+  /* ???????????????????? */
+  /* Awal About */
+  #about {
+    /* height: calc(100vh-50px); */
+  }
+  .aboutme {
+    display: flex;
+    justify-content: center;
+  }
+  .skill-me {
+    flex-direction: row;
+  }
+  .skill-me ul {
+    flex-direction: column;
+  }
+  .certificate {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .certif {
+    max-width: 230px;
+    max-height: 180px;
+  }
+  .aboutme h2 {
+    font-size: 2.2rem;
+    margin: 15px;
+  }
+  .text,
+  .skill,
+  .certificate {
+    margin: auto;
+  }
+  .text {
+    max-width: 420px;
+    max-height: 20%;
+  }
+  .text p {
+    /* margin: 20px; */
+    font-size: 1.8rem;
+  }
+  .skill-me h3 {
+    font-size: 2rem;
+  }
+  .skill-me ul li {
+    font-size: 1.8rem;
+  }
+  /* ???????????????????? */
+  /* Awal Project */
+  .myproject h2 {
+    font-size: 2.2rem;
+    margin: 15px;
+  }
+
+  .card {
+    margin: 10px;
+    max-width: 380px;
+    max-height: 250px;
+  }
+  .textcard h3 {
+    font-size: 1.7rem;
+  }
+  /* ?????????????? */
+  /* Awal Contact */
+  #contact h2 {
+    font-size: 2.2rem;
+  }
+  /* Akhir Contact */
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media only screen and (min-width: 768px) {
+  nav ul li {
+    font-size: 1.7rem;
+  }
+  nav h2 {
+    font-size: 2.15rem;
+    margin-left: 30px;
+  }
+  /* ???????????? */
+  /* Awal Home */
+
+  .heroImg {
+    width: 440px;
+    height: 440px;
+  }
+  #home form {
+    text-align: start;
+  }
+
+  /* ????????????? */
+  /* Awal About */
+  #about {
+    top: 65px;
+  }
+  .aboutme h2 {
+    font-size: 2.6rem;
+  }
+  .text {
+    max-width: 550px;
+    max-height: 450px;
+    /* padding: 25px; */
+  }
+  .text p {
+    font-size: 2.3rem;
+    /* text-align: center; */
+  }
+  .skill-me h3 {
+    font-size: 2.3rem;
+  }
+  .skill-me ul li {
+    font-size: 2rem;
+  }
+  /* ???????????????????? */
+  /* Awal Project */
+  .card {
+    margin: 0 10px;
+    max-width: 350px;
+    max-height: 250px;
+  }
+  .mywork {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .textcard {
+    height: 40px;
+  }
+  /* ???????????????? */
+  .contactme {
+    flex-direction: row;
+    max-width: 700px;
+  }
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media only screen and (min-width: 992px) {
+  nav ul li {
+    font-size: 1.8rem;
+  }
+  nav h2 {
+    font-size: 2.3rem;
+    margin-left: 30px;
+  }
+  /* ???????????? */
+  /* Awal Home */
+
+  .boxHome {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .heroImg {
+    width: 450px;
+    height: 450px;
+  }
+  #home form {
+    text-align: start;
+  }
+  input#whatsapp {
+    width: 100px;
+    font-weight: 1000;
+  }
+  .intro p {
+    font-size: 3.9rem;
+  }
+  .intro h2 {
+    font-size: 3.5rem;
+  }
+  /* ??????????????????????????????? */
+  /* Awal About */
+  #about {
+    margin: 10px auto;
+    top: 75px;
+  }
+  .aboutme h2 {
+    font-size: 2.5rem;
+  }
+  .text p {
+    /* margin: 20px; */
+    font-size: 2.4rem;
+  }
+  .text {
+    /* padding: 15px; */
+    max-width: 630px;
+    max-height: 500px;
+  }
+  .skill-me h3 {
+    font-size: 2.2rem;
+  }
+  .skill-me ul li {
+    font-size: 2rem;
+  }
+  .certif {
+    max-width: 280px;
+    max-height: 230px;
+  }
+  .mywork {
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+  }
+  .sidecontact {
+    background-color: rgba(61, 61, 61, 0.5);
+    margin: 0;
+  }
+  /* #contact form {
+    position: relative;
+    left: 80px;
+    bottom: -50px;
+    opacity: 2;
+  } */
+  .mycon {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  }
+}
