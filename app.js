@@ -8,7 +8,6 @@ ham.addEventListener("click", () => {
 
 document.addEventListener("click", function (e) {
   if (!ham.contains(e.target) && !tog.contains(e.target)) {
-    console.log("tai" + e);
     tog.classList.remove("aktif");
   }
 });
@@ -16,11 +15,9 @@ document.addEventListener("click", function (e) {
 function loopBG(all) {
   all.forEach((el) => {
     el.addEventListener("mouseenter", function () {
-      console.log("lu punya duit lu punya kuasa");
       el.style.backgroundColor = " rgb(40 40 40)";
     });
     el.addEventListener("mouseleave", function () {
-      console.log("Tai");
       el.style.backgroundColor = "rgb(26, 26, 26)";
     });
   });

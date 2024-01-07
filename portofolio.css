@@ -613,6 +613,9 @@ footer div p {
   }
   /* ???????????????????? */
   /* Awal Project */
+  #project {
+    padding: 50px 0 0 0;
+  }
   .card {
     margin: 0 10px;
     max-width: 350px;
@@ -642,7 +645,9 @@ footer div p {
   }
   /* ???????????? */
   /* Awal Home */
-
+  #home {
+    width: 90%;
+  }
   .boxHome {
     flex-direction: row;
     justify-content: space-around;
@@ -667,26 +672,35 @@ footer div p {
   /* ??????????????????????????????? */
   /* Awal About */
   #about {
-    margin: 10px auto;
-    top: 75px;
+    width: 80%;
+    height: 100%;
+    top: 100px;
+    padding: 50px 0 0 0;
   }
   .aboutme h2 {
+    margin: 15px auto;
     font-size: 2.5rem;
   }
   .text p {
-    /* margin: 20px; */
     font-size: 2.4rem;
   }
   .text {
     /* padding: 15px; */
+    margin: 10px auto;
     max-width: 630px;
     max-height: 500px;
+  }
+  .skill-me {
+    margin: 10px auto;
   }
   .skill-me h3 {
     font-size: 2.2rem;
   }
   .skill-me ul li {
     font-size: 2rem;
+  }
+  .certificate {
+    margin: 10px auto;
   }
   .certif {
     max-width: 280px;
@@ -701,15 +715,26 @@ footer div p {
     background-color: rgba(61, 61, 61, 0.5);
     margin: 0;
   }
-  /* #contact form {
-    position: relative;
-    left: 80px;
-    bottom: -50px;
-    opacity: 2;
-  } */
   .mycon {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
   }
+  /* ??????? */
+  /* Awal Project */
+  #project {
+    padding: 50px 0 0 0;
+  }
+  .myproject {
+    margin: 50px auto;
+  }
+  /* Akhir Project */
+  /* ??????? */
+  /* Awal Contact */
+  #contact {
+    width: 80%;
+    padding: 50px 0 0 0;
+    margin: 50px auto;
+  }
+  /* Akhir Contact */
 }

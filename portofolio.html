@@ -13,7 +13,7 @@
                 <h2>Rafli Ilham Aditia</h2>
                 <ul class="toggle">
                     <li><a href="#home">Home</a></li>
-                    <li><span><a href="#bout">About</a></span></li>
+                    <li><span><a href="#about">About</a></span></li>
                     <li><a href="#project">Project</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -42,8 +42,8 @@
             </div>
             </section>
             <section id="about">
-                <article id='bout'class="aboutme">
-                    <h2 >About Me</h2>
+                <article class="aboutme">
+                    <h2>About Me</h2>
                     <div class="text">
                         <p>Hallo saya Rafli saya adalah mahasiswa di suatu Universitas yang cukup terkenal di Jakarta saya juga tertarik dengan perkembangan teknologi di dunia saya juga adalah Frontend Web Developer</p>
                     </div>
@@ -114,17 +114,17 @@
                             </aside>
                         </article>
                     </div>
-                    <form action="">
+                    <form name="portofolio-form">
                         <fieldset class="formbox">
                             <legend>Send a Message</legend>
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="Email">
                             <label for="username">Nama</label>
-                            <input type="text" id="username" name="name" placeholder="Name">
+                            <input type="text" id="username" name="nama" placeholder="Name">
                             <label for="password">Password</label>
                             <input type="text" id="password" name="password" placeholder="Password">
                             <label for="response">Comment</label>
-                            <textarea name="response" id="response" placeholder="Your Comment"></textarea>
+                            <textarea id="response" placeholder="Your Comment" name="comment"></textarea>
                             <input type="submit" id="contactme" name="contactme"><br>
                         </fieldset>  
                     </form>
@@ -140,6 +140,17 @@
         <script>
           AOS.init();
         </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbznGLr7_P_jZqg4_wLmE4kukN42UyJABff7JMbMTT5RviXBrxz3WNNcNKM6PqOXJjMa/exec'
+            const form = document.forms['portofolio-form']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
         <script src="app.js"></script>
     </body>
     
